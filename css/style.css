@@ -190,13 +190,13 @@ body {
   margin-bottom: 12px;
 }
 
-h2 {
+.hero .content h2 {
   color: #ededed;
   font-size: 40px;
   font-weight: 600;
 }
 
-h1 {
+.hero .content h1 {
   font-size: 128px;
   font-weight: 600;
   background: linear-gradient(90deg, #ededed, #878787);
@@ -205,11 +205,11 @@ h1 {
   color: transparent;
 }
 
-h1 span {
+.hero .content h1 span {
   color: var(--orange);
 }
 
-p {
+.hero .content p {
   font-family: "junicode-regular", sans-serif;
   font-size: 30px;
   margin-bottom: 50px;
@@ -274,15 +274,14 @@ p {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding: 20px 23%;
+  padding: 10px 22%;
   line-height: 150%;
 }
 
 .about .statistics {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin-top: -50px;
+  padding: 10px 0;
 }
 
 .about .stat-item {
@@ -306,12 +305,11 @@ p {
 
 .about .button-about {
   text-align: center;
-  margin-top: -30px;
 }
 
 /* Features Section */
 .features {
-  padding: 130px 3%;
+  padding: 120px 3%;
 }
 
 .features .features-head {
@@ -353,18 +351,33 @@ p {
 .features .container .item {
   height: 245px;
   display: flex;
-  border: 1px solid #fff;
   border-radius: 20px;
-  align-items: flex-end;
-  padding: 20px;
-  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  top: -30px;
+  justify-content: flex-end;
   font-size: 32px;
   font-weight: 400;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.features .container .item .service-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features .container .item p {
+  position: relative;
 }
 
 .features .button-features {
   text-align: center;
-  margin-top: 50px;
 }
 
 /* Portfolio Section */
@@ -411,6 +424,141 @@ p {
 
 .testimonial-head .FE {
   color: var(--orange);
+}
+
+/* Contact Section */
+.contact {
+  padding: 130px 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact h2 {
+  font-size: 48px;
+  font-weight: 400;
+  width: 30%;
+}
+
+.contact form {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact 
+
+/* Footer */
+footer {
+  background-color: var(--bg);
+  color: #fff;
+  padding: 80px 3% 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 100px;
+  position: relative;
+}
+
+footer .address {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .address .footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+footer .address p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #bababa;
+  margin: 0;
+}
+
+footer .links {
+  grid-row: 1 / 2;
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+footer .links .pages,
+footer .links .support {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer a {
+  font-size: 15px;
+  color: #bababa;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--orange);
+}
+
+.footer .socials {
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  padding-top: 30px;
+  border-top: 1px solid #4f4f51;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .socials h3 {
+  margin-bottom: 20px;
+}
+
+footer .socials div {
+  display: flex;
+  gap: 15px;
+}
+
+footer .socials a {
+  font-size: 10px;
+  color: #bababa;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: var(--orange);
+}
+
+footer .credit {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  text-align: left;
+  padding-top: 20px;
+}
+
+footer .credit p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
 }
 
 /* Media Queries */
