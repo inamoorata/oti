@@ -238,6 +238,7 @@ h3 {
 /* About Section */
 .about {
   padding: 130px 5%;
+  position: relatives;
 }
 
 .about::before {
