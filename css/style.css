@@ -363,7 +363,8 @@ body {
   object-fit: cover;
 }
 
-.features .item p {
+.features .item p,
+.portfolio .item p {
   position: relative;
 }
 
@@ -376,13 +377,13 @@ body {
   padding: 130px 3%;
 }
 
-.portfolio .content p {
+.portfolio .content .title {
   font-weight: 400;
   font-size: 45px;
   color: var(--white);
 }
 
-.portfolio .content p span {
+.portfolio .content .title span {
   font-family: "junicode", sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -394,71 +395,176 @@ body {
   margin-right: 10px;
 }
 
-.portfolio .portfolio-pics {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  white-space: nowrap;
-  margin: 10px;
+.portfolio-container {
+  margin-top: 40px;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 20px 0;
-  gap: 20px;
-  height: 264px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+.portfolio-container p {
+  font-size: 22px;
+  font-weight: 600;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 650px;
+  white-space: normal;
+}
+
+.portfolio-container::-webkit-scrollbar {
+  height: 10px;
+  background-color: var(--gray);
+}
+.portfolio-container::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+
+.portfolio .row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio .row-1 .item {
+  flex: 0 0 294px;
+  height: 194px;
+}
+
+.portfolio .row-2 .item.big {
+  flex: 0 0 417px;
+  height: 250px;
 }
 
 .portfolio .item {
-  background: linear-gradient(to bottom, #2b2b2b 10%, #2b1f23 70%, #ff5e32);
   border-radius: 10px;
-  padding: 12px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  padding: 10px;
-  top: -30px;
-  font-size: 32px;
-  font-weight: 400;
   position: relative;
+  z-index: 1;
 }
 
-.portfolio .item .image {
-  position: absolute;
-  height: 100%;
+.portfolio .item img {
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  display: inline-block;
-}
-
-.portfolio .item .image .big {
-  grid-column: span 2;
-  grid-row: span 2;
-  height: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* Testimonial Section */
 
-.testimonial {
+.testimonials {
   padding: 130px 3%;
 }
 
-.testimonial .testimonial-head {
+.testimonials .testimonials-head {
   font-size: 40px;
   font-weight: 400;
   color: #fff;
   text-align: center;
+  padding-bottom: 50px;
 }
 
-.testimonial-head .they {
+.testimonials-head .they {
   font-family: "junicode";
   font-style: italic;
   color: var(--orange);
 }
 
-.testimonial-head .FE {
+.testimonials-head .FE {
   color: var(--orange);
+}
+
+.testimonials .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  color: #000;
+  height: 364px;
+  width: 860px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+}
+
+.card-left {
+  flex: 1;
+  background-color: #d1cfc0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-right {
+  flex: 1;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-user {
+  width: 70px;
+  height: 70px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials .message {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.testimonials .user-name {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.testimonials .user-division {
+  font-size: 10px;
+  margin-bottom: 20px;
 }
 
 /* Contact Section */
@@ -654,7 +760,7 @@ footer .credit p {
 /* Media Queries */
 
 /* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   html {
     font-size: 50%;
   }
@@ -682,12 +788,9 @@ footer .credit p {
     margin: 20px;
     padding: 5px;
   }
-}
 
-/* Mobile */
-@media (max-width: 600px) {
-  html {
-    font-size: 40%;
+  .hero .content p {
+    font-size: 20px;
   }
 }
 

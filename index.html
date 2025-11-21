@@ -200,7 +200,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
       <main class="content">
-        <p>See our latest <span>Portfolio</span></p>
+        <p class="title">See our latest <span>Portfolio</span></p>
 
         <a href="#" class="button button_primary"
           >See Our Full Portfolio
@@ -213,46 +213,33 @@
         </a>
 
         <div class="portfolio-pics">
-          <div class="item">
-            <img src="assets/image.jpg" alt="Portfolio Image" class="image" />
-            <p class="title">Lorem Ipsum</p>
+          <div class="portfolio-container">
+            <div class="row row-1">
+              <div class="item"><img src="assets/portfolio.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/portfolio1.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/kucing1.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/portfolio3.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/portfolio 3.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/portfolio4.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item"><img src="assets/portfolio5.jpg" /><p>Lorem Ipsum</p></div>
+            </div>
+            
+            <div class="row row-2">
+              <div class="item big"><img src="assets/service1.jpg" /><p>Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+              <div class="item big"><img src="assets/portfoliooo.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item big"><img src="assets/portfolio6.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item big"><img src="assets/kucing.jpg" /><p>Lorem Ipsum</p></div>
+              <div class="item big"><img src="assets/user1.jpg" /><p>Lorem Ipsum</p></div>
+            </div>
           </div>
 
-          <div class="item">
-            <img src="assets/image.jpg" alt="Portfolio Image" class="image" />
-            <p class="title">Lorem Ipsum</p>
-          </div>
-
-          <div class="item">
-            <img src="assets/image.jpg" alt="Portfolio Image" class="image" />
-            <p class="title">Lorem Ipsum</p>
-          </div>
-
-          <div class="item">
-            <img src="assets/image.jpg" alt="Portfolio Image" class="image" />
-            <p class="title">Lorem Ipsum</p>
-          </div>
-
-          <div class="item">
-            <img src="assets/image.jpg" alt="Portfolio Image" class="image" />
-            <p class="title">Lorem Ipsum</p>
-          </div>
-
-          <div class="item">
-            <img
-              src="assets/image.jpg"
-              alt="Portfolio Image"
-              class="image big"
-            />
-            <p class="title">Lorem Ipsum</p>
-          </div>
         </div>
       </main>
     </section>
 
     <!-- Testimonial Section -->
-    <section id="testimonial" class="testimonial">
-      <h2 class="testimonial-head">
+    <section id="testimonials" class="testimonials">
+      <h2 class="testimonials-head">
         What <span class="they">They </span>Say About Omah<span class="FE"
           >FE</span
         >
@@ -263,22 +250,30 @@
           <i data-feather="chevron-left"></i>
         </button>
 
-        <div class="card-list">
-          <div class="card-item">
-            <p class="message">
-              “Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus.”
-            </p>
-            <h2 class="user-name">John Doe</h2>
-            <p class="user-division">Staff of OmahTI</p>
+        <div class="card">
+            <div class="card-left">
+              <div class="card-user">
+                <img src="assets/profile-avatar.png" alt="Profil">
+              </div>
+              <p class="message">
+                “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.”
+              </p>
+              <h2 class="user-name">John Doe</h2>
+              <p class="user-division">Staff of OmahTI</p>
+            </div>
+            <div class="card-right">
+              <img src="assets/testimonial.jpg" alt="Testimonial Pic">
+            </div>
           </div>
+           <button class="button button_primary">
+          <i data-feather="chevron-right"></i>
+        </button>
         </div>
+       
       </div>
-      <button class="button button_primary">
-        <i data-feather="chevron-right"></i>
-      </button>
     </section>
 
     <!-- Contact Section -->
