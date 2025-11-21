@@ -11,9 +11,9 @@ a. Tujuan Utama: Pembelajaran dan Peningkatan Pemahaman Kode
 Penggunaan AI sebagai media pembelajaran interaktif untuk memperkuat pemahaman mendalam tentang elemen dasar HTML, CSS, dan JavaScript.
 
 Detail Penggunaan:
--Bertanya mengenai kegunaan spesifik dari berbagai tag HTML, properti CSS (flex-direction, grid-template-columns, position, dll.), dan syntax JavaScript.
--Meminta penjelasan detail mengenai konsep penting (misalnya, Box Model, Flexbox vs. Grid) dengan bahasa yang jelas dan mudah dipahami.
--Mempelajari dan memverifikasi penggunaan tag HTML semantik yang tepat, seperti footer, header, nav, dan section.
+1. Bertanya mengenai kegunaan spesifik dari berbagai tag HTML, properti CSS (flex-direction, grid-template-columns, position, dll.), dan syntax JavaScript.
+2. Meminta penjelasan detail mengenai konsep penting (misalnya, Box Model, Flexbox vs. Grid) dengan bahasa yang jelas dan mudah dipahami.
+3. Mempelajari dan memverifikasi penggunaan tag HTML semantik yang tepat, seperti footer, header, nav, dan section.
 
 b. Tujuan Kedua: Debugging dan Implementasi Fitur Khusus
 
